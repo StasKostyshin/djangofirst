@@ -1,0 +1,13 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Новости{% endblock %}
+
+{% block content %}
+    <dif class="features">
+        <h1>{{ article.title }}</h1>
+        <p>{{ article.anons }}</p>
+        <p>{{ article.date }}</p>
+        <img src="{{ article.photo.url }}"/>
+        <p>{{ article.full_text }}</p>
+    </dif>
+{% endblock %}

@@ -1,0 +1,355 @@
+body {
+    background: #32CD32;
+}
+aside {
+    margin-top: -6px;
+    float: left;
+    background: #000000;
+    width: 15%
+    padding: 2.5%;
+    height: 103vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img {
+    width: 200px;
+    float: left;
+    margin-left: 20px
+}
+
+aside.logo {
+    font-size: 40px;
+    margin-left: 30px;
+    font-weight: bolt;
+    position: relativ;
+    top: -5px
+}
+aside h1 {
+    margin-left: 32px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+
+aside h3 {
+    margin-left: 32px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+aside h2 {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+aside ul {list-style:none}
+aside ul li {
+    display: block;
+    margin-top: 12px;
+    transition: all .5s ease;
+}
+aside ul li:visited, aside ul a:visited{
+    color: #FFD700;
+}
+
+aside ul li:hover, aside ul a:hover{
+    color: #ffffff;
+    text-decoration: none;
+    transform: scale(1.10);
+}
+
+aside ul a {text-decoration: none}
+aside ul h4 {
+    font-size: 14px;
+    margin-top: 145px;
+    margin-bottom: 20px;
+    font-family: "Trebuchet MS",Verdana,serif;
+
+}
+aside ul h5 {
+    font-size: 10px;
+    font-family: "Trebuchet MS",Verdana,serif;
+}
+main .index {
+    float: left;
+    color: #2F4F4F;
+    width: 75%
+
+}
+main .index img {
+    margin-top: -5px;
+    height: 775px;
+    width: 1285px;
+    float: center;
+}
+
+
+main .index p1 {
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 400px;
+    font-size: 35px;
+
+}
+
+main .index p2 {
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 560px;
+    font-size: 35px;
+
+}
+main .index h1 {
+    margin-top: -80px;
+    color: #000000;
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-left: 400px;
+    width: 650px;
+    font-size: 55px;
+}
+main .index h2 {
+    font-size: 45px;
+    font-weight: bolder;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 520px;
+    color: #f90000;
+
+}
+
+
+main .contacts {
+    float: left;
+    color: #FFD700;
+    margin-top: 20px;
+    text-align: center;
+    width: 75%
+}
+main .contacts img {
+    margin-top: -25px;
+    height: 775px;
+    width: 1285px;
+    float: center;
+}
+main .contacts a {
+    float: right;
+    list-style: none;
+    color: #f90000;
+    font-size: 24px;
+
+}
+main .contacts li {
+    list-style: none;
+    width: 30px;
+    margin-left: 1000px;
+}
+
+main .contacts li:hover, aside a:hover{
+    color: #000000;
+    text-decoration: none;
+    transform: scale(1.30);
+    marker: none;
+
+}
+
+main .contacts p {
+   margin-top: -50px;
+   color: #f90000;
+   font-size: 30px;
+   font-weight: bolder;
+   margin-left: 800px;
+
+}
+main .about {
+    float: left;
+    color: #FFD700;
+    margin-top: 0px;
+    text-align: left;
+    width: 75%
+}
+
+main .about h1 {
+    margin-top: -80px;
+    margin-bottom: 5px;
+    color: #000000;
+
+}
+main .about h3 {
+    font-size: 35px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #f90000;
+    float: left
+
+}
+main .about h2 {
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    color: #f90000;
+    float: left
+
+}
+main .about h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #f90000;
+    margin-right: 600px;
+
+}
+
+
+main .about p {
+    color: #000000;
+    font-weight: bold;
+    margin-right: 600px;
+
+}
+
+main .about img {
+    size: cover;
+    margin-top: -6px;
+    height: 780px;
+    width: 1282px;
+    float: center;
+}
+
+div.alert-warning {
+    position: relative;
+    text_align: right;
+    margin-left: 500px;
+}
+.alert-warning {
+    --bs-alert-color: #664d03;
+    --bs-alert-bg: #000000;
+    --bs-alert-border-color: #000000;
+}
+div.alert-warning a {
+    background: #FFD700;
+}
+div#pages {
+    margin-left: 520px;
+}
+
+main .news{
+    float: left;
+    color: #FFD700;
+    margin-top: 5px;
+    text-align: center;
+    width: 75%
+}
+
+main .news img {
+    margin-top: -12px;
+    height: 777px;
+    width: 1283px;
+    float: center;
+}
+
+main .news h3 {
+    font-size: 25px;
+}
+main .news h1 {
+    font-size: 30px;
+    margin-top: -40px;
+    margin-left: 500px;
+}
+
+main .news a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+main .news p {
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 500px;
+}
+
+
+div.current {
+    font-size: 40px;
+}
+
+
+
+main .video {
+    float: left;
+    color: #FFD700;
+    margin-top: 5px;
+    text-align: center;
+    width: 75%;
+
+}
+main .video a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+main .video p {
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 500px;
+}
+main .video h1 {
+    margin-top: -40px;
+    font-size: 35px;
+    margin-left: 500px;
+}
+main .video h3 {
+    font-size: 22px;
+}
+main .video img {
+    margin-top: -12px;
+    height: 776px;
+    width: 1280px;
+    float: center;
+}
+
+main .videosee{
+    float: left;
+    color: #FFD700;
+    margin-top: 20px;
+    text-align: center;
+    width: 75%;
+
+}
+
+
+main .features {
+    float: left;
+    color: #202020;
+    margin-top: 20px;
+    text-align: center;
+    width: 75%;
+}
+main .features img {
+    height:350px;
+    width:400px;
+}
+main .features img:hover {
+    transform: scale(1.50);
+}
+main .features p {
+    font-size: 20px;
+}
+
+
+<style>
+div#tekst_sverhu_kartinki {
+position: relative;
+}.tekst_sverhu_kartinki {
+position: absolute;
+top: 10%;
+text-transform: uppercase;
+color: #FFD700;
+padding: 10px;
+}
+</style>
+
+

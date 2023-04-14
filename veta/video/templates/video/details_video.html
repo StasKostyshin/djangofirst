@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Видео архив{% endblock %}
+
+{% block content %}
+    <dif class="videosee">
+        <h1>{{ videos.title }}</h1>
+        <video controls
+            width="400"
+            height="550"
+            muted>
+            <source src="{{ videos.file.url }}" type="video/mp4"/>
+        </video>
+    </dif>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %}Новости{% endblock %}
+
+{% block content %}
+    <dif class="news">
+        <div id="tekst_sverhu_kartinki">
+            <img src="{% static 'news/img/video.jpg' %}" alt="foto">
+            <div class="tekst_sverhu_kartinki"><h1>Новости на сайте</h1>
+            {% if news %}
+            {% for el in news %}
+                <div class="alert alert-warning">
+                    <h3>{{ el.title }}</h3>
+                    <p>{{ el.anons }}</p>
+                    <a href="{% url 'news-detail' el.id %}"  class="btn btn-warning">Читать</a>
+                </div>
+            {% endfor %}
+
+                <div id="pages" align="center">
+                    {% if news.has_previous %}
+                        <a href="?page={{ news.previous_page_number }}">Назад</a>
+                    {% endif %}
+                    <span class="current">
+                        Page {{ news.number }} of {{ news.paginator.num_pages }}.
+                    </span>
+
+                    {% if news.has_next %}
+                        <a href="?page={{ news.next_page_number }}">Вперёд</a>
+                    {% endif %}
+                </div>
+            </div>
+        {% else %}
+            <p>Новостей нет!</p>
+        {% endif %}
+            </div>
+    </dif>
+{% endblock %}

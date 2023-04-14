@@ -1,0 +1,33 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %}Видео архив{% endblock %}
+
+{% block content %}
+    <dif class="video">
+        <img src="{% static 'news/img/wing.png' %}" alt="foto">
+            <div class="tekst_sverhu_kartinki"><h1>Видео архив</h1>
+            {% if video %}
+            {% for el in video %}
+                <div class="alert alert-warning">
+                    <h3>{{ el.title }}</h3>
+                    <a href="{% url 'video-detail' el.id %}" class="btn btn-warning">Смотреть</a>
+                </div>
+            {% endfor %}
+                <div id="pages" align="center">
+                    {% if video.has_previous %}
+                        <a href="?page={{ video.previous_page_number }}">Назад</a>
+                    {% endif %}
+                    <span class="current">
+                        Page {{ video.number }} of {{ video.paginator.num_pages }}.
+                    </span>
+
+                    {% if video.has_next %}
+                        <a href="?page={{ video.next_page_number }}">Вперёд</a>
+                    {% endif %}
+                </div>
+            </div>
+        {% else %}
+            <p>Видео файлов нет!</p>
+        {% endif %}
+    </dif>
+{% endblock %}
